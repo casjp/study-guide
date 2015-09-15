@@ -122,7 +122,8 @@ git clone <url of git you want to clone>
 https://github.com/casjp/study-guide.git
 
 
-
+adding push:
+git push origin master
 
 
 
