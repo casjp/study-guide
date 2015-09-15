@@ -1,0 +1,133 @@
+download git/
+1. type : download git at google
+2. location file is : git-scm.com
+3. choose : git from git barch only
+
+4. open : barsh
+5. $ git config //configure soe setting
+6. $git config --global user.name "yourName" //set your username in git
+7. $ git config --global user.email "youremail"
+8. git config --list // show your git setting
+9. clear // to delete all the text in the screen
+
+10. to view one setting: $ git config user.email
+11. $ git help //show more command ex: $ git help commit // name of the topic is coomit
+
+creating repository: // or git project
+
+1. create a folder where your project
+2. $ pwd // to looking in your project dir
+3. $ cd ~   // '~' means HOME
+4. $ cd .. // to back dir
+5. $ ls // to show all the folder
+6. $cd <dir> // to go directory
+7. how to start a git project : $ git init // means start git project
+
+Commit command :
+1. to check that you are in your repository project type : $ pwd
+2. $ ls -la // show all hidden folder that control everything but dont change it
+3. git add . // add all the changes to all the project (.) means directory
+4. $ git commit -m "this is out first commit" // -m means this is a message
+
+adding files and commmit log:
+
+1. $ git log //how to view ygiour commit
+2. $ git log --author="<name of person>" // to view the commit of a specific user
+3. $ git status // show the file that working for and track the file that currently working for
+
+Git workflow
+1. $ git add <name of text example second.text>
+/*working copy(local computer) > staging area (this is the file that ready to commit to ) > repository*/
+2. $ git commit -m "adding the second file to the repository" //adding all file from staging area
+
+How to edit files
+1. $ git add . // to add multiple files
+
+Viewing changes that you made
+
+1. git status // to show the modefied file
+2. git diff // to show the main and the modified that you made
+3. git status // change to multiple file
+4. git diff // it show one by one that you made
+
+Comparing staging are and repository
+
+1. $ git status // to show file in staging area
+2. $ git add // to add the file and staging area
+3. $ git diff // show the changes in staging area
+4. $ git diff // compared working copy
+5. $ git diff-staged // compares staging area
+
+How to delete files
+
+1. git rm <nameofFile> // rm means remove, it remove the file in repository and working copy
+2. git status // to show the status
+3. git commit -m "" // to commit the changes
+
+How to move and rename files
+
+1. git status //
+2. git add <new file name with extension>
+3. git rm <name of file to rename>
+4. git status // to show the what you do
+5. git commit // commit the changes
+
+easy way rename and move file
+1. git mv <old file><space><new file name>// mv means move
+2. git mv <name to move in a folder><space><to a folder to be move/name of file> // new folder
+3. git commit // rename the file
+4. git commit -am "message" // it insert all from the working copy to a repository
+
+working with actual web site
+
+checkout
+1. git checkout -- index.html // to get the file and bring the file in the working copy -- means bridges, back to later time of changes
+
+unstage files
+1. git reset HEAD <file that you want to get back in the working area>
+
+getting old version from the repository
+1. git checkout <commit number just type a few> -- <copy of a file>
+
+pushing repository on github online
+
+1. git remote add <any name you want><space><the url of repository in the github>
+2. git remote // this command will show the name that you set in your github file
+3. git push -u <your repository name that you have seted in step 1><space>master // adding file from the server and this will ask your username and password in github
+
+GIT
+1. git log --pretty=oneline // to see a commit in one line
+
+//cas.projectportfolio@github.com
+//https://github.com/casjp-softdevproject/hello-world.git
+https://github.com/cas-project/hello-world.git
+https://bitbucket.org/account/signin/?next=/regogo/rooms
+
+PUSHING
+1. git pull // to update the project in desktop
+
+Braching creating new pointer
+https://github.com/casjp/java-notes.git
+gitignore
+1. git touch .gitignore // where you want to write which things that you dont want to your repository
+
+
+
+https://github.com/casjp/bicol-region.git
+
+cloning:
+git clone <url of git you want to clone>
+
+
+https://github.com/casjp/study-guide.git
+
+
+
+
+
+
+
+
+
+
+
