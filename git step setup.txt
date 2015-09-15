@@ -125,6 +125,8 @@ https://github.com/casjp/study-guide.git
 adding push:
 git push origin master
 
+https://www.youtube.com/watch?v=vJcMDk_VgQc&index=2&list=PLsoBxH455yoZZeeza9TiG8I9dGP0zz5o9
+
 
 
 
