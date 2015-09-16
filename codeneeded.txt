@@ -102,6 +102,84 @@ public class MainActivity extends Activity {
  * 
  * 
  * 
+
+class StudentAdapterView extends ArrayAdapter<Student> {
+
+	Context context;
+	int singleRow;
+	ArrayList<Student> student;
+
+	public StudentAdapterView(Context context, int textViewResourceId,
+			ArrayList<Student> student) {
+		super(context, textViewResourceId, student);
+		this.context = context;
+		this.singleRow = textViewResourceId;
+		this.student = student;
+	}
+
+	@Override
+	public Student getItem(int position) {
+		// TODO Auto-generated method stub
+		return student.get(position);
+	}
+
+	private String toGenderEquivalent(int gender) {
+		// method to convert 1 to male and 2 to female
+		String equivalentName = "";
+		if (gender == 1) {
+			equivalentName = "Male";
+		} else if (gender == 2) {
+			equivalentName = "Female";
+		} else {
+			equivalentName = "Not setted";
+		}
+
+		return equivalentName;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		// return customize single view of each student
+		View row = convertView;
+		StudentViewHolder viewHolder = null;
+		if (row == null) {
+			LayoutInflater inflater = (LayoutInflater) context
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			row = inflater.inflate(singleRow, parent, false);
+			viewHolder = new StudentViewHolder(row);
+			row.setTag(viewHolder);
+
+		} else {
+
+			viewHolder = (StudentViewHolder) row.getTag();
+
+		}
+
+		Student temp = getItem(position);
+		String name = temp.getFirstName() + " " + temp.getMiddleInitial()
+				+ ". " + temp.getLastName();
+
+		viewHolder.studentName.setText(name);
+		viewHolder.studentName.setTag(temp);
+		viewHolder.studentGender.setText(""
+				+ toGenderEquivalent(temp.getGender()));
+
+		return row;
+	}
+
+}
+
+class StudentViewHolder {
+	TextView studentName;
+	TextView studentGender;
+
+	public StudentViewHolder(View row) {
+		// find each view and convert it in java code
+		studentName = (TextView) row.findViewById(R.id.studentName);
+		studentGender = (TextView) row.findViewById(R.id.studentGender);
+	}
+}
+
  * */
 
 	
