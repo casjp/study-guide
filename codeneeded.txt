@@ -180,7 +180,29 @@ class StudentViewHolder {
 	}
 }
 
- * */
+ * 
+in onCreate()
+sharePref = getSharedPreferences(PrefStorage.PREF_MIDTERM_CATEGORY,
+				Context.MODE_PRIVATE);
+		studentList = (ListView) findViewById(R.id.studentList);
+		int classId = sharePref.getInt("classId", 0);
+		StudentDbAdapter studentAdapter = new StudentDbAdapter(
+				ViewStudentActivity.this);
+		ArrayList<Student> studentListRecord = (ArrayList<Student>) studentAdapter
+				.getStudentIn(classId);
+
+		if (!studentListRecord.isEmpty()) {
+			// if student list in a specific class is not empty show student
+			// record
+			StudentAdapterView studentAdapterView = new StudentAdapterView(
+					ViewStudentActivity.this, R.layout.single_student_row,
+					studentListRecord);
+			studentList.setAdapter(studentAdapterView);
+			studentList.setOnItemClickListener(ViewStudentActivity.this);
+		}
+
+
+*/
 
 	
 }
