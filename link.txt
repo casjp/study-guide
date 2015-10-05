@@ -1,3 +1,4 @@
 http://www.androidhive.info/2012/01/android-json-parsing-tutorial/
 https://github.com/liaohuqiu/android-GridViewWithHeaderAndFooter/tree/master/src/in/srain/cube/views
 http://karanbalkar.com/2013/12/tutorial-65-implement-barcode-scanner-using-zxing-in-android/sss
+http://stackoverflow.com/questions/17924525/how-to-import-zxing-library-project-for-android-app-in-eclipse
