@@ -1,0 +1,27 @@
+Webview webView;
+webVView.setWebViewClient(new Object());
+//this method will not allow the click view to load to another browser
+webView.getSetting.setJavaScriptEnable(true); // to load url use java script
+webView.getSetting.setLoadWithOverviewMode(true);
+
+webView.getSetting.setUserWideViewPort(true);
+// to setup a normal brower view
+webView.loadUrl("url name");
+ 
+
+
+
+
+public class Object extends WebViewClient { // another file
+	@ovrride
+	public boolean shouldOverrideUrlLoading(Webview web, String url) {
+// @web is the name of view that will be override
+// @url is which url try to load
+	web.loadUrl(url); 
+
+	return true;
+
+}
+	
+
+}
