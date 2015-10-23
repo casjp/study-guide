@@ -1,0 +1,17 @@
+
+
+TTF or OTF font-format
+
+The Typeface create
+
+you can only this by code
+
+ex:
+TextView t;
+
+t = findViewById(...);
+Typeface myCustomfont = Typeface.creatFromAsset(getAssets(), "<path name of font><ex:"fonts/file.ttf">");
+t.setTypeface(myCustomFont);
+
+
+
