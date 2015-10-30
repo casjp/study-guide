@@ -1,0 +1,11 @@
+Message Queue
+Broadcast Receiver
+Activity
+Service
+
+Looper
+
+Content Provider
+
+
+Multi thraiding communication
